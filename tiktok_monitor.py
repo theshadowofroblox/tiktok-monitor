@@ -115,10 +115,11 @@ def send_discord(video: dict, username: str, delay: int):
         "embeds": [
             {
                 "title": "New TikTok Video Detected!",
-                "description": (
-                    f"**@{user}** just posted a new video.\n\n"
-                    f"[Open Video]({video['url']})"
-                ),
+        "description": (
+        f"@everyone\n\n"
+        f"**@{user}** just posted a new video.\n\n"
+        f"[Open Video]({video['url']})"
+            ),
                 "color": 0xFE2C55,
                 "fields": [
                     {
